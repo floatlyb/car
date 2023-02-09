@@ -1,0 +1,15 @@
+@charset "utf-8";
+body,header,section,nav,footer,div,h1,h2,h3,h4,h5,h6,ul,li,p,table,caption,tbody,thead,tfoot,address,
+ol,ul,blockquote,form,fieldset,legend,input,input,textarea,select,button,main,dl,dt,dd,article
+{margin:0px;  padding:0px;}
+ul, ol{list-style:none;}
+a{ text-decoration:none; }
+table{	border-collapse:collapse;  border-spacing:0px;   }
+hr, caption, legend{ display:none; }
+img{ display:block; border:0px; }
+button, fieldset{ border:0px; }
+address, em, i{ font-style:normal; }
+h1,h2,h3,h4,h5,h6,strong,th,b{ font-weight:normal; font-size:1em;}
+th{ text-align:left;}
+q::before,q::after{ content:"";}
+textarea{ resize:none;}

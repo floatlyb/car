@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"> 
+    <title>ELECTRIFIED-G80</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/car.js"></script>
+</head>
+<body>
+    <header id="main-header">
+        <nav class="tnb">
+            <ul>
+                <li><a href="#">고객센터</a></li>
+                <li><a href="#">마이페이지</a></li>
+            </ul>
+        </nav>
+        <div class="inner-box">
+            <h1><a href="#"><img src="img/logo.png" alt=""></a></h1>
+            <nav class="gnb">
+                <ul>
+                    <li>
+                        <a href="#">모델</a>
+                        <div class="sub">
+                            <ul>
+                                <li><a href="#">G70</a></li>
+                                <li><a href="#">G70 슈팅 브레이크</a></li>
+                                <li><a href="#">G80 전기차</a></li>
+                                <li><a href="#">G80</a></li>
+                                <li><a href="#">G90</a></li>
+                                <li><a href="#">GV60</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">구매</a>
+                        <div class="sub">
+                            <ul>
+                                <li><a href="#">견적내기</a></li>
+                                <li><a href="#">구매 프로그램</a></li>
+                                <li><a href="#">구매가이드</a></li>
+                                <li><a href="#">구매상담 신청</a></li>
+                                <li><a href="#">제네시스 스펙트럼</a></li>
+                                <li><a href="#">사양 조회</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">체험</a>
+                        <div class="sub">
+                            <ul>
+                                <li><a href="#">스페이스</a></li>
+                                <li><a href="#">시승 신청</a></li>
+                                <li><a href="#">전시장 찾기</a></li>
+                                <li><a href="#">드라이빙</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href= "#">멤버스</a>
+                        <div class="sub">
+                            <ul>
+                                <li><a href="#">멤버십</a></li>
+                                <li><a href="#">커넥티드 서비스</a></li>
+                                <li><a href="#">디지털 서비스</a></li>
+                                <li><a href="#">차량관리 서비스</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">제네시스</a>
+                        <div class="sub">
+                            <ul>
+                                <li><a href="#">브랜드</a></li>
+                                <li><a href="#">콘셉트카</a></li>
+                                <li><a href="#">골프</a></li>
+                                <li><a href="#">모터쇼</a></li>
+                                <li><a href="#">로드트립</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="m-gnb navbar navbar-dark bg-dark fixed-top">
+                <div class="container-fluid">
+                    <a href="#"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                          </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" >
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">모델</a>
+                                    <div class="sub">
+                                        <ul>
+                                            <li><a href="#">G70</a></li>
+                                            <li><a href="#">G70 SHOOTING BRAKE</a></li>
+                                            <li><a href="#">G80 ELECTRIFIED</a></li>
+                                            <li><a href="#">G80</a></li>
+                                            <li><a href="#">G90</a></li>
+                                            <li><a href="#">GV60</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">구매</a>
+                                    <div class="sub">
+                                        <ul>
+                                            <li><a href="#">견적내기</a></li>
+                                            <li><a href="#">구매 프로그램</a></li>
+                                            <li><a href="#">전기차 구매가이드</a></li>
+                                            <li><a href="#">구매 상담 신청</a></li>
+                                            <li><a href="#">제네시스 스펙트럼</a></li>
+                                            <li><a href="#">사양 조회하기</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">체험</a>
+                                    <div class="sub">
+                                        <ul>
+                                            <li><a href="#">스페이스</a></li>
+                                            <li><a href="#">시승 신청</a></li>
+                                            <li><a href="#">전시장 찾기</a></li>
+                                            <li><a href="#">제네시스 드라이빙 익스피리언스</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href= "#">멤버스</a>
+                                    <div class="sub">
+                                        <ul>
+                                            <li><a href="#">제네시스 멤버십</a></li>
+                                            <li><a href="#">제네시스 커넥티드 서비스</a></li>
+                                            <li><a href="#">디지털 서비스</a></li>
+                                            <li><a href="#">차량관리 서비스</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li  class="nav-item">
+                                    <a class="nav-link" href="#">제네시스</a>
+                                    <div class="sub">
+                                        <ul>
+                                            <li><a href="#">브랜드</a></li>
+                                            <li><a href="#">콘셉트카</a></li>
+                                            <li><a href="#">제네시스X골프</a></li>
+                                            <li><a href="#">모터쇼</a></li>
+                                            <li><a href="#">로드트립</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </nav>
+            <button type="button" class="toggle">메뉴버튼</button>
+            <div class="gnb-bg"></div>
+        </div>
+    </header>
+    <main>
+        <div id="main-video">
+            <div class="video-text">
+                <p>ELECTRIFIED</p>
+                <span>G80</span>
+                <p>놀라운 전기차의 시작</p>
+            </div>
+            <div class="vd-container" >
+                <video class="vd-content" autoplay muted loop width="100%">
+                    <source src="img/video-01.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div id="main-video-text">
+            <div>
+                <p>* 본 페이지에서 소개되는 상품의 디자인, 색상, 특성, 사양 등은 
+                    참고용이며 실제 제품과 다를 수 있습니다.</p>
+            </div>
+        </div>
+        <section id="car-selected">
+            <div class="car-content">
+                <h2>360º</h2>
+                <div class="car-wrap">
+                     <!-- 차 이미지가 나올 공간-->
+    
+                </div>
+                <div class="car-color">
+                    <div class="color-text">
+                        <span>글로시(유광)</span>
+                        <p>유우니 화이트</p>
+                    </div>
+                    <div class="color-picker">
+                        <ul class="color-list">
+                            <li class="color-item">
+                                <input checked type="radio" id="color0" name="color" value="유우니 화이트">
+                                <label for="color0"><span class="color0">우유니 화이트</span></label>
+                            </li>
+                            <li class="color-item">
+                                <input type="radio" id="color1" name="color" value="세빌 실버">
+                                <label for="color1"><span class="color1">세빌 실버</span></label>
+                            </li>
+                            <li class="color-item">
+                                <input type="radio" id="color2" name="color" value="카프리 블루">
+                                <label for="color2"><span class="color2">카프리 블루</span></label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="fade-view">
+            <div class="fade-text">
+                <p>뛰어난 동력, 신기술을 갖춘 제네시스가 선보이는 
+                    <br>첫번째 전기차 ELECTRI FIED G80</p>
+            </div>
+            <div>
+                <img src="img/fade.jpg" alt="">
+            </div>
+        </div>
+        <section id="second-video">
+            <div class="vd-container" >
+                <video class="vd-content" controls width="100%" >
+                    <source src="img/video-02.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+        <section id="design">
+            <div class="desgin-content">
+                <div class="tab-btns">
+                    <ul>
+                        <li><a href=".box1" class="active">전면디자인</a><span class="bar"></span></li>
+                        <li><a href=".box2">후면 디자인</a></li>
+                        <li><a href=".box3">측면 디자인</a></li>
+                        <li><a href=".box4">히든 파팅 전면 충전구</a></li>
+                        <li><a href=".box5">터빈 형상 19인치 휠</a></li>
+                    </ul>
+                </div>
+                <div class="box1 box-all">
+                    <div><img src="img/design01.jpg" alt=""></div>
+                    <div>
+                        <h3>전면디자인</h3>
+                        <p>Electrified G80는 공기역학적 효율을 고려한G-Matrix 패턴의 그릴과 히든 파팅 구조의 전면 충전구를 통해제네시스만의  전기차 이미지를 구현합니다.</p>
+                    </div>
+                </div>
+                <div class="box2 box-all">
+                    <div><img src="img/design02.jpg" alt=""></div>
+                    <div>
+                        <h3>후면 디자인</h3>
+                        <p>후면부는 배기구를 없애고 공력성능을 고려한 범퍼를 배치하였습니다.</p>
+                    </div>
+                </div>
+                <div class="box3 box-all">
+                    <div><img src="img/design03.jpg" alt=""></div>
+                    <div>
+                        <h3>측면 디자인</h3>
+                        <p>제네시스만의 다이내믹하고 슬릭한 측면 디자인을 유지하였으며, 터빈(turbine) 형상의 신규 19인치 전용 휠로 공력 성능을 극대화 시켰습니다.</p>
+                    </div>
+                </div>
+                <div class="box4 box-all">
+                    <div><img src="img/design04.jpg" alt=""></div>
+                    <div>
+                        <h3>
+                            히든 파팅 전면 충전구</h3>
+                        <p>그릴 상단에 위치한 충전구는 닫았을 때 충전구가 드러나지 않아 그릴의 일부처럼 보여지며, 충전구 안쪽에는 두 줄의 크롬 장식을 적용해 전체적인 디자인 통일성을 부여했습니다.</p>
+                    </div>
+                </div>
+                <div class="box5 box-all">
+                    <div><img src="img/design05.jpg" alt=""></div>
+                    <div>
+                        <h3>
+                            터빈 형상 19인치 휠</h3>
+                        <p>터빈(turbine) 형상의 신규 19인치 전용 휠로 공력 성능을 극대화 시켰습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="charge">
+            <div class="charge-content">
+                <div class="charge-img">
+                    <ul>
+                        <li><img src="img/charge01.jpg" alt=""></li>
+                        <li>
+                            <video class="vd-content" controls width="800" >
+                                <source src="img/charge02.mp4" type="video/mp4">
+                            </video>
+                        </li>
+                        <li><img src="img/charge03.jpg" alt=""></li>
+                        <li>
+                            <video class="vd-content" controls width="800" >
+                                <source src="img/charge04.mp4" type="video/mp4">
+                            </video>
+                        </li>
+                        <li><img src="img/charge05.jpg" alt=""></li>
+                    </ul>
+                </div>
+                <div class="charge-info">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <h3>급속 충전 & 완속 충전</h3>
+                                <span class="down"></span>
+                            </a>
+                            <div class="answer">
+                                <p>최대 800V급 충전기로 급속 충전 시 22분 이내에 배터리 용량의 10%에서 80%까지 충전이 가능합니다. (배터리 온도 25℃ 기준)
+                                    또한, 11kW급 완속 충전기로 9시간 충전 시 10%에서 100%까지 충전되어 427km까지 안정적이고 편안한 주행을 즐길 수 있습니다.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h3>1회 충전 주행거리 427km</h3>
+                                <span class="down"></span>
+                            </a>
+                            <div class="answer">
+                                <p>Electrified G80의 1회 충전 주행거리는 427km로, 장거리 운행에도 1회 충전을 통한 효율적인 주행이 가능합니다.</p>
+                                <span>※ 동절기 등 외기온도 하락시 배터리 성능 저하로 실주행거리가 감소될 수 있습니다.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h3>완속충전 & 멀티입력 충전시스템</h3>
+                                <span class="down"></span>
+                            </a>
+                            <div class="answer">
+                                <p>완속 충전과 일반 급속 충전기, 초급속 충전기를 모두 지원하는 400V/800V 멀티 입력 충전시스템을 적용하였습니다</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h3>실외 V2L 전용 커넥터</h3>
+                                <span class="down"></span>
+                            </a>
+                            <div class="answer">
+                                <p>야외 활동이나 긴급 상황 시 충전구에 V2L 젠더 커넥터를 연결, 220V 전기 출력을 통해 다양한 가전제품 및 전자기기를 활용할 수 있습니다.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="car-info">
+            <div class="info-wrap">
+                <div class="info-img">
+                    <img src="img/car-info.jpg" alt="">
+                </div>
+
+                <div class="info-text">
+                    <p>차량 제원 정보</p>
+                    <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        정보보기
+                    </button>
+                </div>
+                
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog  modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">차량 제원 정보</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p><span>전장 (mm)</span>5,005<span>전폭 (mm)</span>1,925<span>전고 (mm)</span> 1,475<span>축간거리 (mm)</span> 3,010 </p>
+                            <p><span>윤거 전 (mm)</span>1,630<span>윤거 후 (mm)</span>1,636<span>엔진형식 / 배터리종류</span>리튬 이온 </p>
+                            <p><span>구동방식</span>AWD<span>배기량 (cc) / 배터리용량 (kWh)</span>87.2 kWh<span>연료탱크용량 (L)</span>-</p>
+                            <p><span>최고출력 (PS/rpm) / (kW)</span>전륜: 136 kW, 후륜: 136 kW, 합산: 272 kW </p>
+                            <p><span>최대토크 (kgf·m/rpm) / (Nm)</span>전륜: 350 Nm, 후륜: 350 Nm, 합산: 700 Nm</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="safe">
+            <div class="safe-content">
+                <div class="safe-item">
+                    <a href="#"><img src="img/safe01.jpg" alt=""></a>
+                    <div class="safe-text">
+                        <h3>차로 이탈방지 보조</h3>
+                        <p>차로 이탈방지 보조는 일정 속도 이상 주행 중 방향지시등 스위치 조작없이 차로를 이탈할 경우, 경고를 해주는 기능입니다. 차로 이탈이 감지되면 자동으로 조향을 보조하여 차로를 이탈하지 않도록 지원합니다. 차로 유지보조는 차로 중앙을 유지하며 주행하도록 지원하는 기능입니다.</p>
+                    </div>
+                </div>
+                <div class="safe-item">
+                    <a href="#"><img src="img/safe02.jpg" alt=""></a>
+                    <div class="safe-text">
+                        <h3>후측방 충돌방지 보조</h3>
+                        <p>차로 변경 중 후측방 차량과의 충돌 위험이 감지되면 경고하고, 필요 시 제동을 보조해 충돌 회피를 도와줍니다. 평행 주차 상태에서 전진 출차를 할 경우에도 후측방 차량과의 충돌 위험을 감지해 자동으로 제동을 도와줍니다.</p>
+                    </div>
+                </div>
+                <div class="safe-item">
+                    <a href="#"><img src="img/safe03.jpg" alt=""></a>
+                    <div class="safe-text">
+                        <h3>후진 가이드 램프</h3>
+                        <p>차량 후진 시 LED 가이드 조명을 뒤쪽 노면에 비춰 보행자와 차량이 후진하는 것을 주변 보행자와 차량이 쉽게 알 수 있도록 함으로써 사고 예방 효과를 극대화할 수 있는 안전 장비입니다.</p>
+                    </div>
+                </div>
+                <div class="safe-item">
+                    <a href="#"><img src="img/safe04.jpg" alt=""></a>
+                    <div class="safe-text">
+                        <h3>전방 주시 경고</h3>
+                        <p>운전자가 전방을 주시하지 않는 상황으로 판단될 경우, 경고를 해줍니다.</p>
+                    </div>
+                </div>
+                <div class="safe-item">
+                    <a href="#"><img src="img/safe05.jpg" alt=""></a>
+                    <div class="safe-text">
+                        <h3>지능형 헤드램프</h3>
+                        <p>상향등 상태를 유지하여 운전자의 시야를 안전하게 확보하는 동시에, 마주 오는 전방 차량 영역의 빛을 부분적으로 차단해 대향차 운전자의 눈부심을 막아줍니다. 선행 차량 영역에도 동일하게 작동하며, 별도의 헤드램프 조작 없이도 시야 확보가 유리하기 때문에 야간 운전이 더욱 용이합니다.</p>
+                    </div>
+                </div>
+                <div class="safe-item">
+                    <a href="#"><img src="img/safe06.jpg" alt=""></a>
+                    <div class="safe-text">
+                        <h3>원격 스마트 주차보조</h3>
+                        <p>주차 공간을 탐색하고 스티어링 휠, 차량의 속도와 변속을 자동으로 제어해 운전자의 편리한 주차 및 출차를 도와줍니다. 차에서 내린 상태에서도 원격으로 스마트 키의 버튼을 이용하여 전진과 후진, 또는 후진 주차를 할 수 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="tec">
+            <div class="tec-content">
+                <div class="tec-btns">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="voice-tab" data-bs-toggle="tab" data-bs-target="#voice" type="button" role="tab" aria-controls="voice" aria-selected="true">
+                                음성인식 차량제어
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="navi-tab" data-bs-toggle="tab" data-bs-target="#navi" type="button" role="tab" aria-controls="navi" aria-selected="false">
+                                증강현실 내비게이션
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="jcon-tab" data-bs-toggle="tab" data-bs-target="#jcon" type="button" role="tab" aria-controls="jcon" aria-selected="false">
+                                제네시스 통합 컨트롤러
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="head-tab" data-bs-toggle="tab" data-bs-target="#head" type="button" role="tab" aria-controls="head" aria-selected="false">
+                                헤드업 디스플레이
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="motion-tab" data-bs-toggle="tab" data-bs-target="#motion" type="button" role="tab" aria-controls="motion" aria-selected="false">
+                                운전석 에르고 모션 시트
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="voice" role="tabpanel" aria-labelledby="voice-tab" tabindex="0">
+                        <div class="tec-img"><img src="img/tec01.jpg" alt=""></div>
+                        <div class="tec-text">
+                            <h3>음성인식 차량제어</h3>
+                            <p>음성인식을 활용하여 공조, 창문, 선루프, 트렁크 등을 제어하는 첨단 편의 시스템으로 운전 편의성을 강화하였습니다.</p>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="navi" role="tabpanel" aria-labelledby="navi-tab" tabindex="0">
+                        <div class="tec-img"><img src="img/tec02.jpg" alt=""></div>
+                        <div class="tec-text">
+                            <h3>증강현실 내비게이션</h3>
+                            <p>최신 지도 및 각종 소프트웨어는 자동으로 업데이트되며, 전방 카메라를 활용한 증강현실 내비게이션 적용으로 보다 직관적이고 편리한 길 안내를 지원합니다.</p>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="jcon" role="tabpanel" aria-labelledby="jcon-tab" tabindex="0">
+                        <div class="tec-img"><img src="img/tec03.jpg" alt=""></div>
+                        <div class="tec-text">
+                            <h3>제네시스 통합 컨트롤러</h3>
+                            <p>센터 콘솔에 위치한 통합 컨트롤러는 복잡하게 버튼을 누르거나 화면을 여러 번 터치할 필요 없이 다양한 인포테인먼트 시스템을 손쉽게 조작할 수 있도록 도와줍니다. 또한, 필기 인식 기능을 적용하여 키보드 입력 대신 손 글씨로 목적지 및 전화 번호부 검색 등을 간편하게 실행할 수 있습니다</p>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="head" role="tabpanel" aria-labelledby="head-tab" tabindex="0">
+                        <div class="tec-img"><img src="img/tec04.jpg" alt=""></div>
+                        <div class="tec-text">
+                            <h3>헤드업 디스플레이</h3>
+                            <p>주행속도, 내비게이션 정보 등은 물론, 운전자 보조 시스템의 주요 정보들과 갈림길 정보 등을 표시합니다. 12인치 와이드의 고화질 디스플레이로 주·야간 모두 시인성이 뛰어납니다.</p>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="motion" role="tabpanel" aria-labelledby="motion-tab" tabindex="0">
+                        <div class="tec-img"><img src="img/tec05.jpg" alt=""></div>
+                        <div class="tec-text">
+                            <h3>운전석 에르고 모션 시트</h3>
+                            <p>시트에 내장된 7개의 공기주머니가 개별 제어를 통해 최적의 운전 자세를 잡아주며, 스트레칭 모드로 운전의 피로를 덜어줍니다. 또한, 운전자가 선택한 주행 모드나 차량 속도와 연동하여 측면 지지력을 최적화해주는 인체공학적 시트입니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="per">
+            <div class="per-content">
+                <div class="per-btns">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="noise-tab" data-bs-toggle="tab" data-bs-target="#noise" type="button" role="tab" aria-controls="noise" aria-selected="true">
+                                액티브 로드 노이즈 컨트롤러
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="sola-tab" data-bs-toggle="tab" data-bs-target="#sola" type="button" role="tab" aria-controls="sola" aria-selected="false">
+                                솔라루프
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="conbreak-tab" data-bs-toggle="tab" data-bs-target="#conbreak" type="button" role="tab" aria-controls="conbreak" aria-selected="false">회생제동 컨트롤 패들쉬프트</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="awd-tab" data-bs-toggle="tab" data-bs-target="#awd" type="button" role="tab" aria-controls="awd" aria-selected="false">
+                                듀얼 모터 AWD 시스템
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="suspen-tab" data-bs-toggle="tab" data-bs-target="#suspen" type="button" role="tab" aria-controls="suspen" aria-selected="false">프리뷰 전자제어 서스펜션</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="break-tab" data-bs-toggle="tab" data-bs-target="#break" type="button" role="tab" aria-controls="break" aria-selected="false">브레이크 모드</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="noise" role="tabpanel" aria-labelledby="noise-tab" tabindex="0">
+                        <video class="vd-content" controls width="60%" >
+                            <source src="img/per01.mp4" type="video/mp4">
+                        </video>
+                        <div class="per-text">
+                            <h3>액티브 로드 노이즈 컨트롤</h3>
+                            <p>주행 중 발생하는 로드 노이즈가 실내로 전달될 경우 소음과 반대되는 위상의 제어음을 출력하여 소음을 저감하고 실내 정숙성을 향상시켜줍니다.</p>
+            
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="sola" role="tabpanel" aria-labelledby="sola-tab" tabindex="0">
+                        <div class="m"><img src="img/per02.jpg" alt=""></div>
+                        <div class="per-text">
+                            <h3>솔라루프</h3>
+                            <p>솔라패널과 제어기로 구성된 솔라루프 시스템이 태양광으로 주행용 배터리와 저전압 배터리를 충전하여 주행거리를 증가시키고 배터리 방전을 막아줍니다</p>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="conbreak" role="tabpanel" aria-labelledby="conbreak-tab" tabindex="0">
+                        <div class="m"><img src="img/per03.jpg" alt=""></div>
+                        <div class="per-text">
+                            <h3>회생제동 컨트롤 패들쉬프트</h3>
+                            <p>스티어링 휠의 패들쉬프트를 통해 감속과 회생제동 수준을 단계별로 조작할 수 있으며, 연비 효율을 개선하는 것은 물론 운전의 재미까지 선사합니다.</p>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="awd" role="tabpanel" aria-labelledby="awd-tab" tabindex="0">
+                        <div class="m"><img src="img/per04.jpg" alt=""></div>
+                        <div class="per-text">
+                            <h3>듀얼 모터 AWD 시스템</h3>
+                            <p>최고출력 136kW, 최대토크 350Nm의 힘을 발휘하는 모터를 전륜과 후륜에 각각 적용하여 합산 최고출력 272kW(약 370PS), 최대토크 700Nm의 동력성능을 발휘합니다. 더불어, 정지 상태에서 시속 100 km까지 4.9초만에 도달하는 역동적인 주행성능을 체험할 수 있습니다</p>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="suspen" role="tabpanel" aria-labelledby="suspen-tab" tabindex="0">
+                        <div class="m"><img src="img/per05.jpg" alt=""></div>
+                        <div class="per-text">
+                            <h3>프리뷰 전자제어 서스펜션</h3>
+                            <p>전방 카메라로 인식한 노면 정보와 내비게이션의 지도 정보를 바탕으로, 서스펜션의 감쇠력을 자동으로 조절하여 차량의 움직임을 제어합니다. 과속방지턱과 같이 차량에 큰 충격을 줄 수 있는 상황을 미리 인지하고 대응함으로써 부드럽고 편안한 승차감을 제공합니다.</p>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="break" role="tabpanel" aria-labelledby="break-tab" tabindex="0">
+                        <div class="m"><img src="img/per06.jpg" alt=""></div>
+                        <div class="per-text">
+                            <h3>브레이크 모드</h3>
+                            <p>운전자의 성향에 따라 편안하고 안정적인 제동감을 구현하는 컴포트 모드, 빠른 반응 속도와 선형적인 제동감을 발휘하는 스포츠 모드를 선택하여 주행할 수 있습니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="estimate">
+            <div class="est-content">
+                <img src="img/estimate.jpg" alt="">
+                <div class="est-text">
+                    <h3>ELECTRIFIED G80 견적내기</h3>
+                    <p>고객 개인의 니즈와 성향에 맞는 차량을 구매하실 수 있는 YOUR GENESIS를 소개합니다. 고급 정장을 맞추듯 기본 트림을 베이스로 외관, 인테리어, 다양한 첨단 편의 사양을 고객의 선호에 맞게 선택할 수 있는 특별한 경험을 제공합니다.
+                    </p>
+                    <button type="button">
+                        견적내기
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="inner-box">
+            <div class="footer-top">
+                <div class="site">
+                    <ul>
+                        <li><a href="#">사이트맵</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보 처리방침</a></li>
+                        <li><a href="#">저작권 안내</a></li>
+                        <li><a href="#">보증 안내</a></li>
+                        <li><a href="#">자동차 교환 및 환불 중재 규정 안내</a></li>
+                        <li><a href="#">하차 재발 통보 안내</a></li>
+                    </ul>
+                </div>
+                <div class="sns">
+                    <ul>
+                        <li><a href="#"><img src="img/face.png" alt=""></a></li>
+                        <li><a href="#"><img src="img/instar.png" alt=""></a></li>
+                        <li><a href="#"><img src="img/youtube.png" alt=""></a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <h3><img src="img/logo.png"></h3>
+                <p>© Copyright 2023 Hyundai Motor Company.
+                    All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
