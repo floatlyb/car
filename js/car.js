@@ -59,10 +59,6 @@ $(function(){
         $('.color-text>p').html('카프리 블루')
 
     })
-
-
-
-
     
     //디자인 박스
     $('.tab-btns>ul>li>a').on('click',function(event){
@@ -73,15 +69,6 @@ $(function(){
         $( $(this).attr('href') ).css('display','flex');
 	});
 
-    //모달창 그냥 부트스트랩 ㄱ
-/*     $('main>#car-info>.info-wrap>.info-text>.open').on('click',function(){
-        $('.popup-bg').addClass('show');
-        $('.popup-box').addClass('popup2')
-    });
-    $('main>#car-info>.info-wrap>.popup-bg>.info-popup>.popup-box>.close').on('click',function(){
-        $('.popup-bg').removeClass('show');
-        $('.popup-box').removeClass('popup2');
-    }); */
 
     //충전 아코디언
     $('.charge-info>ul>li>a').on('click',function(event){
@@ -89,11 +76,8 @@ $(function(){
         if($(this).next().css('display')=='none'){
             $('.charge-info>ul>li>a').removeClass('on');
             $(this).addClass('on');
-            $('.answer:visible').slideUp(300);
-            $(this).next().slideDown(300);
-        }else{
-            $(this).removeClass('on');
-            $(this).next().slideUp(300);
+            $('.answer:visible').slideUp(300, 'easeOutQuart');
+            $(this).next().slideDown(300, 'easeOutQuart');
         }
         let n=$(this).parent().index();
         $('.charge-img>ul>li').hide();
