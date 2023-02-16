@@ -1,4 +1,14 @@
 $(function(){
+    //gnb 슬라이드
+    $('.gnb>ul').on('mouseenter focusin', function(){
+        $(this).find('.sub').stop().slideDown(350, 'easeOutCubic');
+        $('.gnb-bg').stop().slideDown(350, 'easeOutCubic');
+    });
+    $('.gnb>ul').on('mouseleave focusout', function(){
+        $('.sub').stop().slideUp(350, 'easeOutCubic');
+        $('.gnb-bg').stop().slideUp(350, 'easeOutCubic');
+    });
+
     //car 드래그
     for(let i=1; i<=36; i++){
         $('.car-wrap').append(`<img src="img/c${i}.png" alt="">`);
@@ -35,9 +45,10 @@ $(function(){
         });
     });
     $("body").on('mouseup',function(){
-        $('.car-wrap').off('mousemove'); // 이벤트 해제
+        $('.car-wrap').off('mousemove'); // 차 드래그 이벤트 해제
     });
 
+    //색상 선택 텍스트
     $('.color-item>#color0').on('click',function(){
         for(let i=0; i<=36; i++){
             $('.car-wrap').find('img').eq(i).attr('src',`img/c${i+1}.png`)
@@ -73,18 +84,14 @@ $(function(){
     //충전 아코디언
     $('.charge-info>ul>li>a').on('click',function(event){
         event.preventDefault();
-        if($(this).next().css('display')=='none'){
             $('.charge-info>ul>li>a').removeClass('on');
+            $('.answer').removeClass('on')
+            $(this).next().addClass('on')
             $(this).addClass('on');
-            $('.answer:visible').slideUp(300, 'easeOutQuart');
-            $(this).next().slideDown(300, 'easeOutQuart');
-        }
         let n=$(this).parent().index();
         $('.charge-img>ul>li').hide();
         $('.charge-img>ul>li').eq(n).show();
     })
-
- 
 
     //테크놀로지 박스
     $('.tec-content>.tec-btns>ul>li>a').on('click',function(event){
