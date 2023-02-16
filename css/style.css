@@ -503,9 +503,10 @@ footer>.inner-box>.footer_bottom>p{ margin-top:28px;}
     }
     #main-video{ padding-top:70px;}
     #main-video>.video-text{
-        top: 120px; left: 30px;
+        top: 100px; left: 30px;
     }
     #main-video>.video-text>p{ font-size:16px;}
-    #main-video>.video-text>span{ font-size:30px;}
+    #main-video>.video-text>span{ font-size:20px;}
+    #main-video-text2{ padding:10px;}
 
 }
