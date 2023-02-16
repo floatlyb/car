@@ -484,22 +484,28 @@ footer>.inner-box>.footer_bottom>p{ margin-top:28px;}
     #main-header>.inner-box>.gnb{display:none;}
     #main-header>.inner-box>.m-gnb{ display:block}
     .offcanvas-body>ul>li>a{ 
-        color:#fff; font-size:18px;
+        color:#fff; font-size:20px;
     }
+    .offcanvas-body>ul>.m-tnb>a{ font-size:14px;}
     .offcanvas-body>ul>li>.sub>ul{
         display:flex; flex-direction:row;
         justify-content:space-between;
         flex-wrap: wrap;
         border-bottom:1px solid #ccc;
+        gap:10px;
     }
     .offcanvas-body>ul>li>.sub>ul>li{
-        padding-right:32px; padding-bottom:14px;
+        /*padding-right:32px;*/ padding-bottom:14px;
+        flex:1 1 auto; 
     }
     .offcanvas-body>ul>li>.sub>ul>li>a{
-        color:#fff; font-size:15px;
+        color:#fff; font-size:14px;
     }
-    
     #main-video{ padding-top:70px;}
-    #main-video>.video-text{}
+    #main-video>.video-text{
+        top: 120px; left: 30px;
+    }
+    #main-video>.video-text>p{ font-size:16px;}
+    #main-video>.video-text>span{ font-size:30px;}
 
 }
