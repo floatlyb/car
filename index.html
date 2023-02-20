@@ -90,13 +90,13 @@
             <nav class="m-gnb navbar navbar-dark bg-dark fixed-top">
                 <div class="container-fluid">
                     <a href="#"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
                         <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                      </button>
+                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
                         <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                           </div>
                         <div class="offcanvas-body">
                             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" >
@@ -105,8 +105,8 @@
                                     <div class="sub">
                                         <ul>
                                             <li><a href="#">G70</a></li>
-                                            <li><a href="#">G70 SHOOTING BRAKE</a></li>
-                                            <li><a href="#">G80 ELECTRIFIED</a></li>
+                                            <li><a href="#">G70 슈팅 브레이크</a></li>
+                                            <li><a href="#">G80 전기차</a></li>
                                             <li><a href="#">G80</a></li>
                                             <li><a href="#">G90</a></li>
                                             <li><a href="#">GV60</a></li>
@@ -148,7 +148,7 @@
                                         </ul>
                                     </div>
                                 </li>
-                                <li  class="nav-item">
+                                <li class="nav-item">
                                     <a class="nav-link" href="#">제네시스</a>
                                     <div class="sub">
                                         <ul>
@@ -160,11 +160,12 @@
                                         </ul>
                                     </div>
                                 </li>
+                                <li class="nav-item m-tnb"><a class="nav-link" href="#">고객센터</a></li>
+                                <li class="nav-item m-tnb"><a class="nav-link" href="#">마이페이지</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
-
             </nav>
             <div class="gnb-bg"></div>
         </div>
@@ -310,7 +311,7 @@
                                 <h3>급속 충전 & 완속 충전</h3>
                                 <span class="down"></span>
                             </a>
-                            <div class="answer">
+                            <div class="answer on">
                                 <p>최대 800V급 충전기로 급속 충전 시 22분 이내에 배터리 용량의 10%에서 80%까지 충전이 가능합니다. (배터리 온도 25℃ 기준)
                                     또한, 11kW급 완속 충전기로 9시간 충전 시 10%에서 100%까지 충전되어 427km까지 안정적이고 편안한 주행을 즐길 수 있습니다.</p>
                             </div>
@@ -322,7 +323,7 @@
                             </a>
                             <div class="answer">
                                 <p>Electrified G80의 1회 충전 주행거리는 427km로, 장거리 운행에도 1회 충전을 통한 효율적인 주행이 가능합니다.</p>
-                                <span>※ 동절기 등 외기온도 하락시 배터리 성능 저하로 실주행거리가 감소될 수 있습니다.</span>
+                                <p class="cold">※ 동절기 등 외기온도 하락시 배터리 성능 저하로 실주행거리가 감소될 수 있습니다.</p>
                             </div>
                         </li>
                         <li>
@@ -369,7 +370,7 @@
                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <table class="table table-striped table-sm">
+                            <table class="table table-bordered table-striped table-sm">
                                 <tbody>
                                     <tr>
                                         <td><span>전장 (mm)</span></td>
@@ -398,8 +399,8 @@
                                     </tr>
 
                                     <tr>
-                                        <td><span>배기량(cc) / 배터리용량(kWh)</span></td>
-                                        <td><span>최고출력(PS/rpm)/(kW) </span></td>
+                                        <td><span>배기량(cc) /<br>배터리용량(kWh)</span></td>
+                                        <td><span>최고출력<br>(PS/rpm)/(kW) </span></td>
                                         <td><span>최대토크(kgf·m/rpm)/(Nm) </span></td>
                                         <td><span>연료탱크용량 (L)</span> </td>
                                     </tr>
